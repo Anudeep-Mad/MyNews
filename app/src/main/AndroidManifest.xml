@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Aboutus"
+            android:parentActivityName="admin.com.mynews.MainActivity"
             android:label="Recycler View">
             <intent-filter>
                 <action android:name="android.intent.category.About"/>

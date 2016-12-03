@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class Aboutus extends AppCompatActivity {
 
     ImageView imgvw;
-    TextView txtvw;
+    TextView headline,desc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,16 @@ public class Aboutus extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         imgvw = (ImageView) findViewById(R.id.descimg);
-        imgvw.setImageResource(R.mipmap.ic_launcher);
+        imgvw.setImageResource(R.mipmap.image_head);
 
-        txtvw = (TextView) findViewById(R.id.desctext);
-        txtvw.setText("Hello");
+        headline = (TextView) findViewById(R.id.texthead);
+        headline.setText(R.string.headline);
+
+        desc = (TextView) findViewById(R.id.textdesc);
+        desc.setText(R.string.telugu);
+
+
+
 
 
     }
